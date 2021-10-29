@@ -3,47 +3,47 @@ var itemList = {
     "sp001": {
         "name": "Sữa Chua Vị Kiwi",
         "price": 21000,
-        "photo": "images/sanpham/kiwi.jpg"
+        "photo": "../data/images/sanpham/kiwi.jpg"
     },
     "sp002": {
         "name": "Sữa Chua Vị Xoài",
         "price": 22000,
-        "photo": "images/sanpham/mango.jpg"
+        "photo": "../data/images/sanpham/mango.jpg"
     },
     "sp003": {
         "name": "Sữa Chua Vị Dưa Lưới",
         "price": 23000,
-        "photo": "images/sanpham/cantaloupe.jpg"
+        "photo": "../data/images/sanpham/cantaloupe.jpg"
     },
     "sp004": {
         "name": "Sữa Chua Vị Mâm Xôi",
         "price": 24000,
-        "photo": "images/sanpham/blackberry.jpg"
+        "photo": "../data/images/sanpham/blackberry.jpg"
     },
     "sp005": {
         "name": "Sữa Chua Vị Dâu Tây",
         "price": 25000,
-        "photo": "images/sanpham/strawberry.jpg"
+        "photo": "../data/images/sanpham/strawberry.jpg"
     },
     "sp006": {
         "name": "Sữa Chua Vị Việt Quất",
         "price": 26000,
-        "photo": "images/sanpham/blueberry.jpg"
+        "photo": "../data/images/sanpham/blueberry.jpg"
     },
     "sp007": {
         "name": "Sữa Chua Vị Bưởi",
         "price": 27000,
-        "photo": "images/sanpham/grapes.jpg"
+        "photo": "../data/images/sanpham/grapes.jpg"
     },
     "sp008": {
         "name": "Sữa Chua Vị Táo Xanh",
         "price": 28000,
-        "photo": "images/sanpham/green-apple.jpg"
+        "photo": "../data/images/sanpham/green-apple.jpg"
     },
     "sp009": {
         "name": "Sữa Chua Vị Dứa",
         "price": 29000,
-        "photo": "images/sanpham/pineapple.jpg"
+        "photo": "../data/images/sanpham/pineapple.jpg"
     },
 }
 
