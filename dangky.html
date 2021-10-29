@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./data/images/favicon.ico" />
+    <title>Đăng ký thành viên</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header>
+        <a href="trangchu.html">
+          <img id="logo" src="./data/images/logo.png" alt="Logo" />
+        </a>
+        <img class="header-img-1" src="./data/images/header-img1.png" alt="">
+        <img class="header-img-2" src="./data/images/header-img2.png" alt="">
+        <img class="header-img-3" src="./data/images/header-img3.png" alt="">
+        <nav>
+          <ul class="nav-list">
+            <li><a class="nav-item" href="trangchu.html">Trang chủ</a></li>
+            <li><a class="nav-item" href="gioithieu.html">Giới thiệu</a></li>
+            <li><a class="nav-item" href="sanpham.html">Sản phẩm</a></li>
+            <li><a class="nav-item" href="tintuc.html">Tin tức</a></li>
+            <li><a class="nav-item" href="dangnhap.html">Đăng nhập</a></li>
+            <li><a class="nav-item" href="dangky.html">Đăng ký</a></li>
+            <li><a class="nav-item" href="lienhe.html">Liên hệ</a></li>
+          </ul>
+  
+          <div class="header-search">
+            <input type="text" name="search" class="header-search-input">
+            <span><i class="search-icon fas fa-search"></i></span>
+            <span><i class="cart-icon fas fa-shopping-cart"></i></span>
+          </div>
+        </nav>
+    </header>
+
+      <main class="main-one-column main-sign-up">
+          <fieldset class="signup">
+              <h1 class="content-header-1">ĐĂNG KÝ</h1>
+              <form onsubmit="return validatePassword(this);"  action="">
+                <table class="signup-table">
+                    <tr>
+                        <td>
+                            <label for="email"><i class="signup-icon fas fa-envelope"></i></label>
+                        </td>
+                        <td>
+                            <input id="email" type="email" name="email" placeholder="Vui lòng nhập email" class="input-signup-info" pattern="^[azA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="psw"><i class="signup-icon fas fa-key"></i></label>
+                          </td>
+                        <td>
+                            <input id="psw" type="password" name="psw" placeholder="Vui lòng nhập mật khẩu" class="input-signup-info" minlength="8" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="psw2"><i class="signup-icon fas fa-key"></i></label>
+                        </td>
+                        <td>
+                            <input  type="password" name="psw2" id="psw2" placeholder="Vui lòng nhập mật khẩu" class="input-signup-info" minlength="8" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for=""><i class="signup-icon fas fa-users"></i></label>
+                        </td>
+                        <td>
+                            <input type="radio" name="memberType" id="memberType1" class="member-type-input" checked>
+                            <label for="memberType1">Bạc</label>
+                            <input type="radio" name="memberType" id="memberType2" class="member-type-input">
+                            <label for="memberType2">Vàng</label>
+                            <input type="radio" name="memberType" id="memberType3" class="member-type-input">
+                            <label for="memberType3">Bạch Kim</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for=""><i class="signup-icon fas fa-portrait"></i></label>
+                        </td>
+                        <td>
+                            <input type="file">
+                        </td>
+                    </tr>
+                    <tr >
+                        <td colspan="2">
+                            Thông qua việc tạo tài khoản, bạn đồng ý với <a href="">Điều khoản & Quyền riêng tư của chúng tôi.</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="Đăng Ký">
+                            <input type="reset" value="Hủy">
+                        </td>
+                    </tr>
+                </table>
+              </form>
+          </fieldset>
+      </main>
+
+      <footer>
+        <p>© 2021 Bản quyền thuộc về FreeezeVN.</p>
+        <a href=""><i class="footer-social-icon fab fa-facebook-f"></i></a>
+        <a href=""><i class="footer-social-icon fab fa-twitter"></i></a>
+        <a href=""><i class="footer-social-icon fab fa-pinterest"></i></a>
+        <a class="back-to-top" href="#logo"></a>
+      </footer>
+
+      <script src="./search.js"></script>
+      <script src="./validateForm.js"></script>
+  </body>
+</html>

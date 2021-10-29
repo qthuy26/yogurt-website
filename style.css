@@ -1,0 +1,518 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    display: grid;
+    margin: 0 auto;
+    border: 1px;
+    padding: 0 5px;
+    width: 1024px;
+    font-size: 1.2em;
+    grid-template-areas: 'header-cell'
+                         'nav-cell'
+                         'main-cell'
+                         'footer-cell';
+    justify-content: center;
+}
+
+header {
+    grid-area: header-cell;
+    background: url('./data/images/header.png');
+    border: 1px solid #ccc7c8;
+    border-radius: 5px;
+    padding: 0 5px;
+    height: 100px;
+    margin-bottom: 2px;
+}
+
+.header-img-1 {
+    height: 100px;
+    position: absolute;
+    top: -30px;
+    animation: header-img-1 3s linear forwards;
+}
+
+@keyframes header-img-1 {
+    0% {
+        left: 80%;
+    }
+    100% {
+        left: 30%;
+    }
+}
+
+.header-img-2 {
+    height: 70px;
+    position: absolute;
+    top: -5px;
+    animation: header-img-2 3s linear forwards;
+}
+
+@keyframes header-img-2 {
+    0% {
+        left: 80%;
+    }
+    100% {
+        left: 45%;
+    }
+}
+
+.header-img-3 {
+    height: 80px;
+    position: absolute;
+    top: 0px;
+    animation: header-img-3 3s linear forwards;
+}
+
+
+@keyframes header-img-3 {
+    0% {
+        left: 80%;
+    }
+    100% {
+        left: 63%;
+    }
+}
+
+nav {
+    grid-area: nav-cell;
+    position: relative;
+    /* margin-top: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    padding-left: 0;
+}
+
+.nav-list li {
+    list-style: none;
+}
+
+.nav-item {
+    display: block;
+    position: relative;
+    top: 0;
+    margin: 3px;
+    border: 1px solid #fff;
+    padding: 2px 4px;
+    height: 20px;
+    color: #ed4190;
+    font-size: 17px;
+    background-color: #ffffff80;
+    text-decoration: none;
+    box-shadow: 0 0 3px 0 #00000066,
+                0 0 2px 0 #0000004d;
+    transition: all 0.2s ease;
+}
+
+.nav-item:hover {
+    color: #fff;
+    background-color: #ed4190;
+}
+
+.header-search {
+    padding-top: 3px;
+}
+
+.search-icon  {
+    padding: 4px;
+    min-width: 30px;
+    color: #fff;
+    background-color: #cddc39;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cart-icon {
+    padding: 4px;
+    min-width: 30px;
+    color: #ed4190;
+    background-color: #cddc39;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+main {
+    grid-area: main-cell;
+    display: grid;
+    border: 1px solid #ccc7c8;
+    border-radius: 5px;
+    padding: 0 5px;
+    background-color: #fff;
+}
+
+main img {
+    border-radius: 5px;
+}
+
+.main-one-column {
+    grid-template-areas: 'left-cell'
+                         'article-cell'
+                         'right-cell';
+}
+
+.main-two-column-right {
+    grid-template-areas: 'left-cell . . .';
+}
+
+.main-two-column-left {
+    grid-template-areas: 'article-cell article-cell article-cell right-cell';
+}
+
+.main-three-column {
+    grid-template-areas: 'left-cell article-cell article-cell right-cell';
+}
+
+article {
+    /* grid-area: article-cell; */
+    display: grid;
+}
+
+
+.content-header-1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 34px;
+    margin: 12px 0 16px;
+    text-transform: uppercase;
+    color: #f90b6d;
+    font-size: 28px;
+    text-align: center;
+}
+
+.content-header-1::after {
+    content: "";
+    display: block;
+    position: relative;
+    transform: skewX(-12deg) translateX(-50%);
+    left: 50%;
+    background-image: linear-gradient(to right, #fff, #cddc39, #fff);
+    width: 200px;
+    margin: 12px 0 16px;
+    height: 3px;
+}
+
+.content-header-2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 28px;
+    margin: 5px 0 10px;
+    color: #f90b6d;
+    font-size: 24px;
+}
+
+
+
+/* ================================================== */
+/* TRANG CHU */
+
+.home-content .content-header-3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 5px 0 10px;
+    color: #f90b6d;
+    font-size: 20px;
+}
+
+.home-content .content-header-3 {
+    margin-left: -30px;
+}
+
+.home-content,
+.news {
+    padding: 0 5px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.art-one-column-2 {
+    flex-direction: row-reverse;
+}
+
+.home-content p {
+    text-align: justify;
+    margin-top: 0;
+    width: 69%;
+}
+
+.home-content img, 
+.home-content video{
+    width: 30%;
+}
+
+.art-one-column-1 p {
+    margin-left: 20px;
+}
+
+.art-one-column-2 p {
+    margin-right: 20px;
+}
+
+aside {
+    margin: 2px;
+    padding: 5px;
+    color: #000;
+}
+
+aside img {
+    width: 100%;
+}
+
+.aside-left {
+    grid-area: left-cell;
+}
+
+.aside-right {
+    grid-area: right-cell;
+}
+
+.order-list {
+    display: inline-block;
+    text-align: center;
+}
+
+.order-item {
+    display: inline-block;
+    border: 1px solid #ed4190;
+    border-radius: 5px;
+    padding-top: 5px;
+    width: 24%;
+}
+
+/* ======================================= */
+/* SAN PHAM */
+.product-section {
+    /* position: relative; */
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    color: #ed4190;
+}
+
+
+.product-item {
+    display: flex;
+    margin: 3px;
+    border: 1px solid #dbd7d9;
+    padding: 0;
+    color: #ed4190;
+    flex: 1;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.product-item img {
+    flex-shrink: 0;
+}
+
+.product-content {
+    color: #ed4190;
+    flex: 1;
+    background-image: linear-gradient(to top, #cddc39 0%, transparent 15%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.product-content h2 {
+    text-align: center;
+}
+
+.product-content p {
+    color: #000;
+    text-align: justify;
+    margin: 10px;
+    flex: 1;
+}
+
+.product-content span {
+    display: block;
+    margin: 4px;
+    padding: 3px;
+    width: 100%;
+    color: #000;
+    text-align: center;
+}
+
+
+/* ======================================== */
+/* LIEN HE */
+.contact-info {
+    display: inline;
+    line-height: 30px;
+}
+
+.checkin {
+    background-color: #cddc39;
+    width: 15px;
+    height: 20px;
+    padding: 5px 15px;
+    display: inline;
+    position: relative;
+    top: 36%;
+    transform: translateY(-50%);
+}
+
+.contact-address {
+    display: inline;
+    font-size: 20px;
+}
+
+.contact-info p {
+    display: inline;
+}
+
+
+.feedback {
+    border: none;
+    text-align: center;
+}
+
+.feedback-table {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.feedback-table .left-table {
+    width: 10%;
+}
+
+.contact-table-icon {
+    background-color: #cddc39;
+    font-size: 18px;
+    padding: 5px 10px;
+    color: #fff;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+
+.feedback-table input {
+    display: block;
+}
+
+.feedback-table select {
+    display: block;
+}
+
+
+/* ======================================================== */
+/* TIN TUC */
+.news {
+    align-items: flex-start;
+}
+
+.news img {
+    width: 250px;
+    height: 170px;
+}
+
+.news p {
+    margin-top: 0;
+}
+
+.aside-left .hot-news {
+    position: relative;
+    top: 18px;
+}
+
+.hot-news {
+    grid-column: 2 / span 10;
+}
+
+
+/* ======================================================== */
+/* DANG KY */
+.main-sign-up,
+.main-sign-in {
+    margin-top: 100px;
+}
+.signup,
+.signin {
+    border: none;
+}
+
+.signup-icon,
+.signin-icon {
+    display: block;
+    background-color: #cddc39;
+    padding: 5px 10px;
+    width: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.signup-table,
+.signin-table {
+    margin: 0 200px;
+}
+
+.signup-table td,
+.signin-table td {
+    float: left;
+}
+
+/* ======================================================== */
+/* DON HANG */
+
+.cart-table,
+.cart-table td,
+.cart-table th{
+    border: 1px solid #000;
+}
+
+.cart-table tbody td,
+.cart-table th {
+    padding: 5px 20px;
+    text-align: center;
+}
+
+.cart-table tfoot td {
+    text-align: right;
+    padding: 5px 10px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: footer-cell;
+    margin-top: 2px;
+    border: 1px solid #ccc7c8;
+    border-radius: 5px;
+    padding: 0 5px;
+    color: #000;
+    position: relative;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.footer-social-icon {
+    color: #ed4190;
+    margin-right: 5px;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 10px;
+    bottom: 5px;
+    display: block;
+    padding: 25px;
+    color: #ed4190;
+    background: url('./data/images/top.png') no-repeat bottom / contain;
+    z-index: 100;
+}
