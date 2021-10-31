@@ -6,9 +6,10 @@ const cartTableBody = document.querySelector('.cart-table tbody')
 function showCart() {
     let TotalPreTax = 0     // Tong truoc thue
     Object.keys(localStorage).forEach((key) => {
-        console.log(key)
+        if(localStorage.getItem("plyr") !== null) {
+            localStorage.removeItem("plyr")
+        }
         let item = itemList[key]
-        console.log(item)
         let photo = item.photo
         let name = item.name
         let price = item.price
