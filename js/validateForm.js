@@ -1,3 +1,3 @@
-function frmValidate5(frm){ 
+function frmValidate5(frm){
     return frm.checkValidity(); 
 }

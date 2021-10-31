@@ -15,7 +15,7 @@ body {
 
 header {
     grid-area: header-cell;
-    background: url('./data/images/header.png');
+    background: url('../data/images/header.png');
     border: 1px solid #ccc7c8;
     border-radius: 5px;
     padding: 0 5px;
@@ -513,6 +513,6 @@ footer a {
     display: block;
     padding: 25px;
     color: #ed4190;
-    background: url('./data/images/top.png') no-repeat bottom / contain;
+    background: url('../data/images/top.png') no-repeat bottom / contain;
     z-index: 100;
 }

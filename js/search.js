@@ -5,12 +5,14 @@ const searchForm = document.querySelector('.header-search')
 
 searchInput.addEventListener('keypress', (e) => {
     if(e.code == 'Enter') {
+        e.preventDefault()
         sendData(searchInput.value)
+        return false
     }
 })
 
 
-searchIcon.addEventListener('click', (e) => {
+searchIcon.addEventListener('click', () => {
     sendData(searchInput.value)
 })
 
@@ -18,10 +20,7 @@ searchIcon.addEventListener('click', (e) => {
 // Ham gui du lieu
 function sendData(data) {
     if(data.length != 0) {
-        searchForm.setAttribute('action', './timkiem.html')
-    }
-    else {
-        searchForm.setAttribute('action', 'javascript:void(0)')
+        searchForm.submit();
     }
 }
 

@@ -49,8 +49,8 @@ var itemList = {
 
 // Ham xu ly dat hang
 function addCart(code) {
-    var number = parseInt(document.getElementById(code).value)
-    var current = parseInt(window.localStorage.getItem(code))
+    let number = parseInt(document.getElementById(code).value)
+    let current = parseInt(window.localStorage.getItem(code))
     // Kiem tra su ton tai cua ma san pham trong localStorage
     if(typeof localStorage[code] == "undefined") {
         window.localStorage.setItem(code, number)

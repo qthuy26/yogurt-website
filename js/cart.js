@@ -6,52 +6,56 @@ const cartTableBody = document.querySelector('.cart-table tbody')
 function showCart() {
     let TotalPreTax = 0     // Tong truoc thue
     Object.keys(localStorage).forEach((key) => {
-        var item = itemList[key]
-        var photo = item.photo
-        var name = item.name
-        var price = item.price
-        var orderNumber = localStorage.getItem(key)
+        console.log(key)
+        let item = itemList[key]
+        console.log(item)
+        let photo = item.photo
+        let name = item.name
+        let price = item.price
+        let orderNumber = localStorage.getItem(key)
 
         // Tao cac o hien thi thong tin san pham
         // Tao o du lieu chua hinh san pham
-        var imgBox = document.createElement("td")
+        let imgBox = document.createElement("td")
         imgBox.innerHTML = "<img src='./data/" + photo + "' class='round-figure' width='100px'/>"
         imgBox.setAttribute("href", photo)
         imgBox.setAttribute("width", "100px")
 
-        var nameBox = document.createElement("td")
-        nameBox.textContent = name
+        let nameCell = document.createElement("td")
+        nameCell.textContent = name
 
-        var priceBox = document.createElement("td")
-        priceBox.textContent = price + "đ"
+        let priceCell = document.createElement("td")
+        priceCell.innerHTML = `${price}<span style="font-size: 24px">&#8363;<span>`
 
-        var orderNumberBox = document.createElement("td")
-        orderNumberBox.textContent = orderNumber
+        let orderNumberCell = document.createElement("td")
+        orderNumberCell.textContent = orderNumber
         
-        var mulPrice = document.createElement("td")
-        mulPrice.textContent = orderNumber * price + "đ"
+        let mulPrice = document.createElement("td")
+        mulPrice.innerHTML = `${orderNumber*price}<span style="font-size: 24px">&#8363;<span>`
         
 
         // Tao nut xoa
-        var delBtn = document.createElement("a")
+        let delBtn = document.createElement("a")
         delBtn.style.padding = "5px"
+        delBtn.style.backgroundColor = "#cddc39"
+        delBtn.style.color = "#f90d6d"
         delBtn.setAttribute("href", "#")
         delBtn.setAttribute("data-code", key)
-        delBtn.innerHTML = '<i class="fa fa-trash icon-pink"></i>'
+        delBtn.innerHTML = '<i class="fa fa-trash"></i>'
         delBtn.onclick = function () {
             removeCart(this.dataset.code)
         }
 
-        var delBox = document.createElement("td")
-        delBox.appendChild(delBtn)
+        let delCell = document.createElement("td")
+        delCell.appendChild(delBtn)
 
-        var newRow = document.createElement("tr")
+        let newRow = document.createElement("tr")
         newRow.appendChild(imgBox)
-        newRow.appendChild(nameBox)
-        newRow.appendChild(orderNumberBox)
-        newRow.appendChild(priceBox)
+        newRow.appendChild(nameCell)
+        newRow.appendChild(orderNumberCell)
+        newRow.appendChild(priceCell)
         newRow.appendChild(mulPrice)
-        newRow.appendChild(delBox)
+        newRow.appendChild(delCell)
 
         cartTableBody.appendChild(newRow)
 
@@ -89,9 +93,9 @@ function removeCart(code) {
 }
 
 function getDiscountRate(){
-    var d = new Date(); // Lay ngay hien tai cua may tinh
-    var weekday=d.getDay(); // Lay ngay trong tuan
-    var totalMins = d.getHours()*60+d.getMinutes(); // Doi thoi gian hien tai ra so phut tuong ung trong ngay
+    let d = new Date(); // Lay ngay hien tai cua may tinh
+    let weekday=d.getDay(); // Lay ngay trong tuan
+    let totalMins = d.getHours()*60+d.getMinutes(); // Doi thoi gian hien tai ra so phut tuong ung trong ngay
     if(weekday >= 1 && weekday <= 3 && ((totalMins >= 420 && totalMins <= 660) || (totalMins >= 780 && totalMins <= 1020)))
         return 0.1;
     return 0;
