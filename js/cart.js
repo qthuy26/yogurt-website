@@ -68,8 +68,8 @@ function showCart() {
     totalPretaxNode.textContent = TotalPreTax
 
     const discountRate = document.querySelector(".discount-rate")
-    discountRate.textContent = getDiscountRate()
     let discount = getDiscountRate() * TotalPreTax
+    discountRate.textContent = discount
     
     const tax = document.querySelector(".tax")
     let taxTemp = 0.1 * (TotalPreTax - discount)
