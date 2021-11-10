@@ -76,7 +76,7 @@ function showCart() {
     tax.textContent = taxTemp
 
     let total = document.querySelector(".total")
-    let totalTemp = TotalPreTax + discount + taxTemp
+    let totalTemp = TotalPreTax - discount + taxTemp
     total.textContent = totalTemp
 
 }
