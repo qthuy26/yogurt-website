@@ -1,0 +1,59 @@
+/* ======================================= */
+/* SAN PHAM */
+.product-section {
+    /* position: relative; */
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    color: #ed4190;
+}
+
+
+.product-item {
+    display: flex;
+    margin: 3px;
+    border: 1px solid #dbd7d9;
+    padding: 0;
+    color: #ed4190;
+    flex: 1;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.product-item img {
+    flex-shrink: 0;
+}
+
+.product-content {
+    color: #ed4190;
+    flex: 1;
+    background-image: linear-gradient(to top, #cddc39 0%, transparent 15%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.product-content h2 {
+    text-align: center;
+}
+
+.product-content p {
+    color: #000;
+    text-align: justify;
+    margin: 10px;
+    flex: 1;
+}
+
+.product-content span {
+    display: block;
+    margin: 4px;
+    padding: 3px;
+    width: 100%;
+    color: #000;
+    text-align: center;
+}
+

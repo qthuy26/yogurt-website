@@ -1,0 +1,19 @@
+/* ======================================================== */
+/* DON HANG */
+
+.cart-table,
+.cart-table td,
+.cart-table th{
+    border: 1px solid #000;
+}
+
+.cart-table tbody td,
+.cart-table th {
+    padding: 5px 20px;
+    text-align: center;
+}
+
+.cart-table tfoot td {
+    text-align: right;
+    padding: 5px 10px;
+}

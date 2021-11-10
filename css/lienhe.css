@@ -1,0 +1,61 @@
+/* ======================================== */
+/* LIEN HE */
+.contact-info {
+    display: inline;
+    line-height: 30px;
+}
+
+.checkin {
+    background-color: #cddc39;
+    width: 15px;
+    height: 20px;
+    padding: 5px 15px;
+    display: inline;
+    position: relative;
+    top: 36%;
+    transform: translateY(-50%);
+}
+
+.contact-address {
+    display: inline;
+    font-size: 20px;
+}
+
+.contact-info p {
+    display: inline;
+}
+
+
+.feedback {
+    border: none;
+    text-align: center;
+}
+
+.feedback-table {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.feedback-table .left-table {
+    width: 10%;
+}
+
+.contact-table-icon {
+    background-color: #cddc39;
+    font-size: 18px;
+    padding: 5px 10px;
+    color: #fff;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+
+.feedback-table input {
+    display: block;
+}
+
+.feedback-table select {
+    display: block;
+}

@@ -1,0 +1,26 @@
+/* ======================================================== */
+/* TIN TUC */
+main {
+    grid-auto-flow: column;
+}
+.news {
+    align-items: flex-start;
+}
+
+.news img {
+    width: 250px;
+    height: 170px;
+}
+
+.news p {
+    margin-top: 0;
+}
+
+.aside-left .hot-news {
+    position: relative;
+    top: 18px;
+}
+
+.hot-news {
+    grid-column: 2 / span 10;
+}
