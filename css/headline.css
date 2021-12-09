@@ -1,0 +1,30 @@
+#headline {
+  position: relative;
+  margin: 0 auto;
+  padding: 10px;
+  width: 1035px;
+  height: 300px;
+}
+#headline div {
+  position: relative;
+  margin: 0 auto;
+}
+#headline div img {
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+#headline div span {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  padding: 0 5px;
+  border: 1px solid red;
+  border-radius: 3px;
+  background-color: white;
+  color: #f90b6d;
+  z-index: 10;
+}
+
+#headline div span h3 {
+  margin: 5px 0;
+}

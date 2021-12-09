@@ -205,8 +205,36 @@ article {
     font-size: 24px;
 }
 
+.art-one-column-2 {
+    flex-direction: row-reverse;
+}
+
+.art-one-column-1 p {
+    margin-left: 20px;
+}
+
+.art-one-column-2 p {
+    margin-right: 20px;
+}
 
 
+aside {
+    margin: 2px;
+    padding: 5px;
+    color: #000;
+}
+
+aside img {
+    width: 100%;
+}
+
+.aside-left {
+    grid-area: left-cell;
+}
+
+.aside-right {
+    grid-area: right-cell;
+}
 
 footer {
     display: flex;

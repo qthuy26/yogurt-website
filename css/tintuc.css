@@ -1,10 +1,14 @@
 /* ======================================================== */
 /* TIN TUC */
-main {
-    grid-auto-flow: column;
-}
 .news {
     align-items: flex-start;
+}
+
+.news {
+    padding: 0 5px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
 }
 
 .news img {
