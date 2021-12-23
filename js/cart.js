@@ -1,7 +1,5 @@
-
 const cartTable = document.querySelector('.cart-table')
 const cartTableBody = document.querySelector('.cart-table tbody')
-
 
 function showCart() {
     let TotalPreTax = 0     // Tong truoc thue

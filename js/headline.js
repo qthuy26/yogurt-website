@@ -1,15 +1,15 @@
 var headlineContent = [
   {
     title: "Bánh flan sữa chua - sự kết hợp hoàn hảo",
-    photo: "../data/images/trangchu/headline/headline1.jpg",
+    photo: "./data/images/trangchu/headline/headline1.jpg",
   },
   {
     title: "Sữa chua làm từ sữa dê - đậm đà hương vị khó quên",
-    photo: "../data/images/trangchu/headline/headline2.jpg",
+    photo: "./data/images/trangchu/headline/headline2.jpg",
   },
   {
     title: "Thưởng thức sữa chua theo cách của bạn",
-    photo: "../data/images/trangchu/headline/headline3.jpg",
+    photo: "./data/images/trangchu/headline/headline3.jpg",
   },
 ];
 
